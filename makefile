@@ -16,13 +16,13 @@ run:
 	@make run-$(MainTest)
 
 run-siggraph_2024_solver:
-	@docker run --rm -d -it -v ./simulations:/shared --user 1000:1000 siggraph_2024_solver:1.0.0 /bin/bash -c "./VEM_2D_SOLVER MeshGenerator:uint=1 MeshOFF_Aggregated_FilePath:string=/shared/meshes/mesh.off ExportFolder:string=/shared/Run ComputeConditionNumber:bool=1 ProgramType:uint=0"
+	@docker run --rm -d -it -v ./simulations:/shared siggraph_2024_solver:1.0.0 /bin/bash -c "./VEM_2D_SOLVER MeshGenerator:uint=1 MeshOFF_Aggregated_FilePath:string=/shared/meshes/mesh.off ExportFolder:string=/shared/Run ComputeConditionNumber:bool=1 ProgramType:uint=0"
 
 run-bash:
 	@make run-bash-$(MainTest)
 
 run-bash-siggraph_2024_solver:
-	@docker run --rm -it -v ./simulations:/shared --user 1000:1000 siggraph_2024_solver:1.0.0 /bin/bash
+	@docker run --rm -it -v ./simulations:/shared siggraph_2024_solver:1.0.0 /bin/bash
 	
 ## Distclean
 distclean:
