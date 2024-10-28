@@ -1,5 +1,5 @@
-libdir=/externals/Main_Install/lapack/lib
-includedir=/externals/Main_Install/lapack/include
+libdir=/home/appuser/externals/Main_Install/lapack/lib
+includedir=/home/appuser/externals/Main_Install/lapack/include
 
 Name: BLAS
 Description: FORTRAN reference implementation of BLAS Basic Linear Algebra Subprograms

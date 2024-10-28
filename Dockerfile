@@ -16,14 +16,17 @@ RUN apt-get update && \
 apt-get install -y cmake && \
 apt-get install -y git
 
+RUN useradd --create-home appuser
+USER appuser
+
 # Copy externals
-WORKDIR /externals/
+WORKDIR /home/appuser/externals/
 
 RUN --mount=type=bind,target=/code \
 cp -r /code/release/externals/* .
 
 # Build application and tests
-WORKDIR /application
+WORKDIR /home/appuser/application
 
 RUN --mount=type=bind,target=/code \
 cp -r /code/release/application/* .

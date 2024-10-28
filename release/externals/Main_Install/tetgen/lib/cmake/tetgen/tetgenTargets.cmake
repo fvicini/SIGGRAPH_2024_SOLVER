@@ -42,7 +42,7 @@ unset(_expectedTargets)
 
 
 # The installation prefix configured by this project.
-set(_IMPORT_PREFIX "/externals/Main_Install/tetgen")
+set(_IMPORT_PREFIX "/home/appuser/externals/Main_Install/tetgen")
 
 # Create imported target tetgen::tetgen
 add_library(tetgen::tetgen STATIC IMPORTED)

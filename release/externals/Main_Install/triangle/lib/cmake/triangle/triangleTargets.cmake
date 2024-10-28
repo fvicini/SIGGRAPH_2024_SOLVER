@@ -42,7 +42,7 @@ unset(_expectedTargets)
 
 
 # The installation prefix configured by this project.
-set(_IMPORT_PREFIX "/externals/Main_Install/triangle")
+set(_IMPORT_PREFIX "/home/appuser/externals/Main_Install/triangle")
 
 # Create imported target triangle::triangle
 add_library(triangle::triangle STATIC IMPORTED)

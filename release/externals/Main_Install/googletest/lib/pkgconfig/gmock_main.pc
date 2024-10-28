@@ -1,5 +1,5 @@
-libdir=/externals/Main_Install/googletest/lib
-includedir=/externals/Main_Install/googletest/include
+libdir=/home/appuser/externals/Main_Install/googletest/lib
+includedir=/home/appuser/externals/Main_Install/googletest/include
 
 Name: gmock_main
 Description: GoogleMock (with main() function)
