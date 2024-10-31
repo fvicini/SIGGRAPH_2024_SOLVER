@@ -21,12 +21,8 @@ USER appuser
 
 # Copy externals
 WORKDIR /home/appuser/externals/
-
-RUN --mount=type=bind,target=/code \
-cp -r /code/release/externals/* .
+ADD ./release/externals /home/appuser/externals/
 
 # Build application and tests
 WORKDIR /home/appuser/application
-
-RUN --mount=type=bind,target=/code \
-cp -r /code/release/application/* .
+ADD ./release/application /home/appuser/application/

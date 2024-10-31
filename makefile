@@ -9,7 +9,7 @@ clean:
 
 ## Create
 create:
-	@docker build -f Dockerfile --target siggraph_2024_solver . -t siggraph_2024_solver:1.0.0
+	@docker build --no-cache -f Dockerfile --target siggraph_2024_solver . -t siggraph_2024_solver:1.0.0
 
 ## Run
 run:
